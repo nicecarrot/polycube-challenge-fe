@@ -30,7 +30,7 @@
   ```npm install```
   ```npm run dev```
 
-- 미리보기
+- 미리보기<br>
   ![메인 페이지](./todo-app/img/ScreenShot.png)
 
 
