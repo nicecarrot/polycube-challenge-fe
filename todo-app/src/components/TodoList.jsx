@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { useRecoilValue} from 'recoil';
+import { useRecoilValue } from 'recoil';
 import { todoListState } from '../atom';
 import TodoItem from './TodoItem';
 import TodoCreate from './TodoCreate';
-import '../styles/main.css'
+import '../styles/main.css';
 
 const TodoList = () => {
   /** atom에서 가져온 todolist */
@@ -30,21 +30,25 @@ const TodoList = () => {
   };
 
   return (
-    <div className={"todo_container"}>
-      <h1>Todo List</h1>
-      
+    <div className="todo_container">
+      <h1>Todo App</h1>
+
       <TodoCreate />
-      <select value={filterOption} onChange={handleFilterChange}>
-        <option value="newest">최신순</option>
-        <option value="oldest">오래된 순</option>
-      </select>
-      <div className="todo_list">
-        {sortedList.map((todo) => (
-          <TodoItem key={todo.id} todo={todo} />
-        ))}
+
+      <div className="todo_list_container">
+        <h1>할 일 목록</h1>
+        <select value={filterOption} onChange={handleFilterChange}>
+          <option value="newest">최신순</option>
+          <option value="oldest">오래된 순</option>
+        </select>
+        <div className="todo_list">
+          {sortedList.map((todo) => (
+            <TodoItem key={todo.id} todo={todo} />
+          ))}
+        </div>
       </div>
     </div>
   );
-}
+};
 
 export default TodoList;

@@ -25,6 +25,15 @@
     - 상세 페이지에서 To-Do 삭제
       - Recoil에서 삭제된 데이터 동기화
 
+- 실행 방법
+  ```cd todo-app```
+  ```npm install```
+  ```npm run dev```
+
+- 미리보기
+  ![메인 페이지](./todo-app/img/ScreenShot.png)
+
+
 ### 2. 바닐라 JS로 슬라이드 배너 구현
 - 요구사항
     - 각 배너는 3개의 이미지로 구성된다. (지정된 배너 이미지)

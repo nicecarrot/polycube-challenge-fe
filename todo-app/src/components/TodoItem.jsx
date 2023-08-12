@@ -10,6 +10,6 @@ const TodoItem = ({ todo }) => {
       <p>작성일: {todo.time.toLocaleString('ko-KR', { timeZone: 'UTC' })}</p>
     </div>
   );
-}
+};
 
 export default TodoItem;

@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { useSetRecoilState } from 'recoil';
 import { todoListState } from '../atom';
-import styles from '../styles/main.css'
+import '../styles/main.css';
 
 const TodoCreate = () => {
   /** Todo Title Input */
@@ -12,7 +12,7 @@ const TodoCreate = () => {
   const handleCreateTodo = () => {
     const title = titleRef.current.value;
     if (title) {
-      setTodoList(prevTodoList => [
+      setTodoList((prevTodoList) => [
         ...prevTodoList,
         {
           id: prevTodoList.length + 1,
@@ -25,12 +25,14 @@ const TodoCreate = () => {
   };
 
   return (
-    <div className={styles.create_container}>
-      <h2>New Todo Create</h2>
+    <div className="create_container">
+      <h1>새로운 할 일 만들기</h1>
       <input type="text" ref={titleRef} />
-      <button onClick={handleCreateTodo}>저장</button>
+      <div className="rightsort_container">
+        <button onClick={handleCreateTodo}>등록</button>
+      </div>
     </div>
   );
-}
+};
 
 export default TodoCreate;
