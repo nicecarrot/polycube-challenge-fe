@@ -2,9 +2,9 @@
 폴리큐브 프론트엔드 사전과제
 
 ### 1. React로 To-DO App 구현
-- 요구사항
-  1-1 기술스택
-     JS, ES6준수, node v18, React CRA
+- 요구사항<br><br>
+  1-1 기술스택<br>
+     JS, ES6준수, node v18, React CRA<br><br>
   1-2 구현기능
     - /: 메인페이지
     - /id: 상세 페이지
