@@ -1,0 +1,31 @@
+/* styles.css */
+
+.slide {
+  width: 400px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  margin: auto;
+}
+
+.slide_item {
+  flex: 0 0 400px;
+  height: 100px;
+  background-size: cover;
+}
+
+.slide_prev_button {
+  color: aliceblue;
+  position: absolute;
+  top: 40%;
+  left: 10px;
+  cursor: pointer;
+}
+.slide_next_button {
+  position: absolute;
+  color: aliceblue;
+  top: 40%;
+  right: 10px;
+  cursor: pointer;
+}
